@@ -1,0 +1,1762 @@
+* {
+		box-sizing: border-box; /* il comportamento di default è content-box, con border-box, larghezza e altezza includono anche il padding e i bordi, rendendo più intutivo il calcolo delle dimensioni */
+}
+
+body {
+    margin: 0;
+    background-color: #F8F7FF;
+    font-family: "Source Serif 4", "Source Serif Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+.contenitore {
+	max-width: 100%; 
+	margin-left: 26%;
+    margin-right: 26% 
+
+}
+
+.contenitore-home {
+    max-width: 100%; 
+    margin-left: 15%;
+    margin-right: 15% 
+}
+
+.contenitore-tema {
+    max-width: 100%;
+    margin-left: 17%;
+    margin-right: 17%
+}
+
+img {
+    max-width: 736px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1.5% 14%;
+    background-color: #E4DDE9
+}
+
+.titolo-header {
+    font-size: 18px;
+    font-weight: medium;
+    color: #000000;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li a {
+    color: #000000;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: #1C3A52;
+}
+
+#home .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-top: 8%;
+}
+
+#home h1 {
+    margin-top: 2%;
+    font-size: 35px;
+    border: 2px solid #000000;
+    border-right: none;
+    padding: 2% 2%;
+    margin-left: auto
+}
+
+#home .introduzione {
+    font-size: 24px;
+    margin-bottom: 2%;
+    border: 2px solid #000000;
+    border-right: none;
+    padding: 2% 2%;
+    margin-left: auto;
+    margin-top: 7%
+}
+
+#home .foto-isole {
+    width: 50%;
+
+}
+
+#home .le-isole {
+    font-size: 30px;
+    padding: 2% 0%;
+    margin-top: 1%
+}
+
+#home .primo-piano {
+    display: flex;
+}
+
+#home .lipari img {
+    width: 98%;
+}
+
+#home .lipari p {
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #000000;
+    border-top: none;
+    width: fit-content;
+    padding: 3% 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3%
+}
+
+#home .stromboli img {
+    width: 98%;
+}
+
+#home .stromboli p {
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #000000;
+    border-top: none;
+    width: fit-content;
+    padding: 3% 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3%
+}
+
+#home .panarea img {
+    width: 98%;
+}
+
+#home .panarea p {
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #000000;
+    border-top: none;
+    width: fit-content;
+    padding: 3% 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3%
+}
+
+#home .link-archivio {
+    list-style: none;
+    margin-top: 2%
+}
+
+#home .link-archivio li a {
+    margin-left: 44%;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+#home .link-archivio li a:hover {
+    color: #1C3A52
+}
+
+#home .tema {
+    padding: 3% 0%
+}
+
+#home .tema h2 {
+    font-size: 30px;
+}
+
+#home .tema p {
+    font-size: 20px;
+    padding: 1% 0%
+}
+
+#home .tema ul {
+    list-style: none
+}
+
+#home .tema ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold
+}
+
+#home .tema ul li a:hover {
+    color: #1C3A52
+}
+
+#archivio h1 {
+    font-size: 44px;
+    font-weight: bold;
+    color: #000000;
+    padding: 1% 0%;
+    margin-top: 3%
+}
+
+#archivio .introduzione {
+    font-size: 21px;
+}
+
+#archivio .foto-isole {
+    padding:2% 0%;
+}
+
+#archivio .Le-isole {
+    font-size: 36px;
+    margin-bottom: 2%
+}
+
+#archivio .prima-fila {
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+}
+
+#archivio .lipari ul {
+    list-style: none;
+    padding: 1% 0%
+}
+
+#archivio .lipari ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#archivio .lipari ul li a:hover {
+    color: #1C3A52;
+}
+
+#archivio .lipari p {
+    font-size:12px;
+    padding: 1% 0%;
+    margin-bottom: 1%
+}
+
+#archivio .salina ul {
+    list-style: none;
+    padding: 1% 0%
+}
+
+#archivio .salina ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#archivio .salina ul li a:hover {
+    color: #1C3A52;
+}
+
+#archivio .salina p {
+    font-size:12px;
+    padding: 1% 0%;
+    margin-bottom: 1%
+}
+
+#archivio .seconda-fila {
+    display: flex;
+    justify-content: space-between;
+    gap: 4%
+}
+
+#archivio .alicudi ul {
+    list-style: none;
+    padding: 1% 0%
+}
+
+#archivio .alicudi ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#archivio .alicudi ul li a:hover {
+    color: #1C3A52;
+}
+
+#archivio .alicudi p {
+    font-size:12px;
+    padding: 1% 0%;
+    margin-bottom: 1%
+}
+
+#archivio .stromboli ul {
+    list-style: none;
+    padding: 1% 0%
+}
+
+#archivio .stromboli ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#archivio .stromboli ul li a:hover {
+    color: #1C3A52;
+}
+
+#archivio .stromboli p {
+    font-size:12px;
+    padding: 1% 0%;
+    margin-bottom: 1%
+}
+
+#archivio .terza-fila {
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+}
+
+#archivio .filicudi ul {
+    list-style: none;
+    padding: 1% 0%
+}
+
+#archivio .filicudi ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#archivio .filicudi ul li a:hover {
+    color: #1C3A52;
+}
+
+#archivio .filicudi p {
+    font-size:12px;
+    padding: 1% 0%;
+    margin-bottom: 1%
+}
+
+#archivio .panarea ul {
+    list-style: none;
+    padding: 1% 0%
+}
+
+#archivio .panarea ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#archivio .panarea ul li a:hover {
+    color: #1C3A52;
+}
+
+#archivio .panarea p {
+    font-size:12px;
+    padding: 1% 0%;
+    margin-bottom: 3%
+}
+
+#stromboli h1 {
+    font-size: 44px;
+    font-weight: bold;
+    padding: 1% 0%;
+    margin-top: 3%
+}
+
+#stromboli .introduzione {
+    font-size: 18px
+}
+
+#stromboli .indicazioni {
+    display: flex;
+    justify-content: space-between;
+    padding: 6% 4%;
+    border: 1px solid #000000;
+    margin-top: 3%
+}
+
+#stromboli .testi-indicazioni {
+    margin-top: 5%;
+}
+
+#stromboli .testi-indicazioni ul {
+    list-style: none;
+}
+
+#stromboli .testi-indicazioni ul li a {
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#stromboli .testi-indicazioni ul li a:hover {
+    color: #1C3A52;
+}
+
+#stromboli h2 {
+    font-size: 20px
+}
+
+#stromboli .foto-stromboli {
+    margin-right: 5%
+}
+
+#stromboli h3 {
+    font-size: 36px
+}
+
+#stromboli .istruzione {
+    padding: 2% 0%
+}
+
+#stromboli .servizi {
+    padding: 2% 0%
+}
+
+#stromboli .contenuti p {
+    font-size: 20px
+}
+
+#stromboli .fonti {
+    margin-bottom: 4%
+}
+
+#stromboli .fonti ul {
+    list-style: none;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#stromboli .fonti ul li a {
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#stromboli .fonti ul li .torna-archivio {
+    font-weight: bold
+}
+
+
+#stromboli .fonti ul li a:hover {
+    color: #1C3A52;
+}
+
+#stromboli #istruzione {
+    scroll-margin-top: 70vh
+}
+
+#stromboli #app-e-cibo {
+    scroll-margin-top: 70vh
+}
+
+#stromboli #servizi {
+    scroll-margin-top: 70vh
+}
+
+#stromboli #fonti {
+    scroll-margin-top: 70vh
+}
+
+#lipari h1 {
+    font-size: 44px;
+    font-weight: bold;
+    padding: 1% 0%;
+    margin-top: 4%
+}
+
+#lipari .introduzione {
+    font-size: 18px
+}
+
+#lipari .indicazioni {
+    display: flex;
+    justify-content: space-between;
+    padding: 6% 4%;
+    border: 1px solid #000000;
+    margin-top: 3%
+}
+
+#lipari .testi-indicazioni {
+    margin-top: 5%;
+}
+
+#lipari .testi-indicazioni ul {
+    list-style: none;
+}
+
+#lipari .testi-indicazioni ul li a {
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#lipari .testi-indicazioni ul li a:hover {
+    color: #1C3A52;
+}
+
+#lipari h2 {
+    font-size: 20px
+}
+
+#lipari .foto-lipari {
+    margin-right: 5%
+}
+
+#lipari h3 {
+    font-size: 36px
+}
+
+#lipari .istruzione {
+    padding: 3% 0%
+}
+
+#lipari .servizi {
+    padding: 3% 0%
+}
+
+#lipari .contenuti p {
+    font-size: 20px
+}
+
+#lipari .fonti {
+    margin-bottom: 4%
+}
+
+#lipari .fonti ul {
+    list-style: none;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#lipari .fonti ul li a {
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#lipari .fonti ul li .torna-archivio {
+    font-weight: bold
+}
+
+#lipari .fonti ul li a:hover {
+    color: #1C3A52;
+}
+
+#lipari #istruzione {
+    scroll-margin-top: 70vh
+}
+
+#lipari #app-e-cibo {
+    scroll-margin-top: 70vh
+}
+
+#lipari #servizi {
+    scroll-margin-top: 70vh
+}
+
+#lipari #fonti {
+    scroll-margin-top: 70vh
+}
+
+#salina h1 {
+    font-size: 44px;
+    font-weight: bold;
+    padding: 1% 0%;
+    margin-top: 4%
+}
+
+#salina .introduzione {
+    font-size: 18px
+}
+
+#salina .indicazioni {
+    display: flex;
+    justify-content: space-between;
+    padding: 6% 4%;
+    border: 1px solid #000000;
+    margin-top: 3%
+}
+
+#salina .testi-indicazioni {
+    margin-top: 5%;
+}
+
+#salina .testi-indicazioni ul {
+    list-style: none;
+}
+
+#salina .testi-indicazioni ul li a {
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#salina .testi-indicazioni ul li a:hover {
+    color: #1C3A52;
+}
+
+#salina h2 {
+    font-size: 20px
+}
+
+#salina .foto-salina {
+    margin-right: 5%
+}
+
+#salina h3 {
+    font-size: 36px
+}
+
+#salina .istruzione {
+    padding: 3% 0%
+}
+
+#salina .servizi {
+    padding: 3% 0%
+}
+
+#salina .contenuti p {
+    font-size: 20px
+}
+
+#salina .fonti {
+    margin-bottom: 4%
+}
+
+#salina .fonti ul {
+    list-style: none;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#salina .fonti ul li a {
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#salina .fonti ul li .torna-archivio {
+    font-weight: bold
+}
+
+#salina .fonti ul li a:hover {
+    color: #1C3A52;
+}
+
+#salina #istruzione {
+    scroll-margin-top: 70vh
+}
+
+#salina #app-e-cibo {
+    scroll-margin-top: 70vh
+}
+
+#salina #servizi {
+    scroll-margin-top: 70vh
+}
+
+#salina #fonti {
+    scroll-margin-top: 70vh
+}
+
+#alicudi h1 {
+    font-size: 44px;
+    font-weight: bold;
+    padding: 1% 0%;
+    margin-top: 4%
+}
+
+#alicudi .introduzione {
+    font-size: 18px
+}
+
+#alicudi .indicazioni {
+    display: flex;
+    justify-content: space-between;
+    padding: 6% 4%;
+    border: 1px solid #000000;
+    margin-top: 3%
+}
+
+#alicudi .testi-indicazioni {
+    margin-top: 4%;
+}
+
+#alicudi .testi-indicazioni ul {
+    list-style: none;
+}
+
+#alicudi .testi-indicazioni ul li a {
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#alicudi .testi-indicazioni ul li a:hover {
+    color: #1C3A52;
+}
+
+#alicudi h2 {
+    font-size: 20px
+}
+
+#alicudi .foto-lipari {
+    margin-right: 3%
+}
+
+#alicudi h3 {
+    font-size: 36px
+}
+
+#alicudi .istruzione {
+    padding: 3% 0%
+}
+
+#alicudi .servizi {
+    padding: 3% 0%
+}
+
+#alicudi .contenuti p {
+    font-size: 20px
+}
+
+#alicudi .fonti {
+    margin-bottom: 4%
+}
+
+#alicudi .fonti ul {
+    list-style: none;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#alicudi .fonti ul li a {
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#alicudi .fonti ul li .torna-archivio {
+    font-weight: bold
+}
+
+#alicudi .fonti ul li a:hover {
+    color: #1C3A52;
+}
+
+#alicudi #istruzione {
+    scroll-margin-top: 70vh
+}
+
+#alicudi #app-e-cibo {
+    scroll-margin-top: 70vh
+}
+
+#alicudi #servizi {
+    scroll-margin-top: 70vh
+}
+
+#alicudi #fonti {
+    scroll-margin-top: 70vh
+}
+
+#filicudi h1 {
+    font-size: 44px;
+    font-weight: bold;
+    padding: 1% 0%;
+    margin-top: 4%
+}
+
+#filicudi .introduzione {
+    font-size: 18px
+}
+
+#filicudi .indicazioni {
+    display: flex;
+    justify-content: space-between;
+    padding: 6% 4%;
+    border: 1px solid #000000;
+    margin-top: 3%
+}
+
+#filicudi .testi-indicazioni {
+    margin-top: 4%;
+}
+
+#filicudi .testi-indicazioni ul {
+    list-style: none;
+}
+
+#filicudi .testi-indicazioni ul li a {
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#filicudi .testi-indicazioni ul li a:hover {
+    color: #1C3A52;
+}
+
+#filicudi h2 {
+    font-size: 20px
+}
+
+#filicudi .foto-lipari {
+    margin-right: 3%
+}
+
+#filicudi h3 {
+    font-size: 36px
+}
+
+#filicudi .istruzione {
+    padding: 3% 0%
+}
+
+#filicudi .servizi {
+    padding: 3% 0%
+}
+
+#filicudi .contenuti p {
+    font-size: 20px
+}
+
+#filicudi .fonti {
+    margin-bottom: 4%
+}
+
+#filicudi .fonti ul {
+    list-style: none;
+    margin-top: 3%s;
+    display: flex;
+    justify-content: space-between;
+}
+
+#filicudi .fonti ul li a {
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#filicudi .fonti ul li .torna-archivio {
+    font-weight: bold
+}
+
+#filicudi .fonti ul li a:hover {
+    color: #1C3A52;
+}
+
+#filicudi #istruzione {
+    scroll-margin-top: 70vh
+}
+
+#filicudi #app-e-cibo {
+    scroll-margin-top: 70vh
+}
+
+#filicudi #servizi {
+    scroll-margin-top: 70vh
+}
+
+#filicudi #fonti {
+    scroll-margin-top: 70vh
+}
+
+#panarea h1 {
+    font-size: 44px;
+    font-weight: bold;
+    padding: 1% 0%;
+    margin-top: 4%
+}
+
+#panarea .introduzione {
+    font-size: 18px
+}
+
+#panarea .indicazioni {
+    display: flex;
+    justify-content: space-between;
+    padding: 6% 4%;
+    border: 1px solid #000000;
+    margin-top: 3%
+}
+
+#panarea .testi-indicazioni {
+    margin-top: 4%;
+}
+
+#panarea .testi-indicazioni ul {
+    list-style: none;
+}
+
+#panarea .testi-indicazioni ul li a {
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#panarea .testi-indicazioni ul li a:hover {
+    color: #1C3A52;
+}
+
+#panarea h2 {
+    font-size: 20px
+}
+
+#panarea .foto-lipari {
+    margin-right: 3%
+}
+
+#panarea h3 {
+    font-size: 36px
+}
+
+#panarea .istruzione {
+    padding: 3% 0%
+}
+
+#panarea .servizi {
+    padding: 3% 0%
+}
+
+#panarea .contenuti p {
+    font-size: 20px
+}
+
+#panarea .fonti {
+    margin-bottom: 4%
+}
+
+#panarea .fonti ul {
+    list-style: none;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#panarea .fonti ul li a {
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#panarea .fonti ul li .torna-archivio {
+    font-weight: bold
+}
+
+#panarea .fonti ul li a:hover {
+    color: #1C3A52;
+}
+
+#panarea #istruzione {
+    scroll-margin-top: 70vh
+}
+
+#panarea #app-e-cibo {
+    scroll-margin-top: 70vh
+}
+
+#panarea #servizi {
+    scroll-margin-top: 70vh
+}
+
+#panarea #fonti {
+    scroll-margin-top: 70vh
+}
+
+#tema h1 {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 57.8px
+}
+
+#tema .introduzione {
+    text-align: center;
+    font-size: 30px
+}
+
+#tema .indicazioni {
+    padding: 0% 22%;
+    border: 1px solid #000000;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    img {
+        margin-bottom: 3%
+    }
+}
+
+#tema .testi-indicazioni {
+    text-align: center;
+    padding: 4% 0%;
+}
+
+#tema .testi-indicazioni ul {
+    list-style: none;
+}
+
+#tema .testi-indicazioni ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px
+}
+
+#tema .testi-indicazioni ul li a:hover {
+    color:#1C3A52
+}
+
+#tema h3 {
+    font-size: 36px
+}
+
+#tema .collegamenti {
+    padding: 2% 0%
+}
+
+#tema .collegamenti p {
+    font-size: 24px
+}
+
+#tema .confini {
+    padding: 2% 0%
+}
+
+#tema .confini p {
+    font-size: 24px
+}
+
+#tema .economia p {
+    font-size: 24px
+}
+
+#tema .economia {
+    padding: 2% 0%
+}
+
+#tema .maltempo {
+    padding: 2% 0%
+}
+
+#tema .maltempo p {
+    font-size: 24px
+}
+
+#tema .maltempo ul {
+    list-style: none;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%
+}
+
+#tema .maltempo ul li a {
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#tema .maltempo ul li .torna-archivio {
+    font-weight: bold
+}
+
+#tema .maltempo ul li a:hover {
+    color: #1C3A52;
+}
+
+#tema #collegamenti {
+    scroll-margin-top: 70vh
+}
+
+#tema #confini {
+    scroll-margin-top: 70vh
+}
+
+#tema #economia {
+    scroll-margin-top: 70vh
+}
+
+#tema #maltempo {
+    scroll-margin-top: 70vh
+}
+
+.footer {
+    text-align: left;
+    padding: 3% 14%;
+    background-color: #1C3A52
+}
+
+.titolo-footer {
+    color: #F8F7FF
+}
+
+.approfondimenti {
+    color: #BDC4D0;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 1% 4%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .titolo-header {
+        font-size: 7px
+    }
+
+    .menu ul {
+        margin-bottom: 3%;
+    }
+
+    .menu ul li a {
+        font-size: 7px;
+    }
+
+    #home .hero {
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+
+    #home h1 {
+        font-size: 10px;
+        border: 0.5px solid #000000;
+        border-top: none;
+        margin-top: 0%;
+        width: 80%;
+        margin-right: 10%
+    }
+
+    #home .introduzione {
+        font-size: 8px;
+        border: 0.5px solid #000000;
+        border-top: none;
+        margin-top: 0%;
+        width: 60%;
+        margin-right: 19%
+    }
+
+    #home .le-isole {
+        font-size: 15px;
+        margin-bottom: 3%
+    }
+
+    #home .primo-piano {
+        flex-direction: column;
+    }
+
+    #home .lipari p {
+        font-size: 10px;
+        border: 0.5px solid #000000;
+        border-top: none;
+        margin-bottom: 5%
+    }
+
+    #home .stromboli p {
+        font-size: 10px;
+        border: 0.5px solid #000000;
+        border-top: none;
+        margin-bottom: 5%
+    }
+
+    #home .panarea p {
+        font-size: 10px;
+        border: 0.5px solid #000000;
+        border-top: none;
+        margin-bottom: 5%
+    }
+
+    #home .link-archivio li a{
+        font-size: 10px
+    }
+
+    #home .link-archivio {
+        margin-top: -1%;
+        margin-right: 15%
+    }
+
+    #home .tema h2 {
+        font-size: 15px
+    }
+
+    #home .tema p {
+        font-size: 10px
+    }
+
+    #home .tema ul li a {
+        font-size: 10px
+    }
+
+    #archivio h1 {
+        font-size: 15px;
+        text-align: center
+    }
+
+    #archivio .introduzione {
+        font-size: 8px;
+        text-align: center
+    }
+
+    #archivio .hero img {
+        width: 100%
+    }
+
+    #archivio .Le-isole {
+        font-size: 12px;
+        margin-bottom: 3%;
+        text-align: center
+    }
+
+    #archivio .prima-fila {
+        flex-direction: column;
+    }
+
+    #archivio .lipari img {
+        width: 100%
+    }
+
+    #archivio .lipari ul li a {
+        font-size: 10px;
+        margin-left: 40%
+    }
+
+    #archivio .lipari ul {
+        margin-top: -3%
+    }
+
+    #archivio .lipari p {
+        font-size: 8px;
+        margin-bottom: 3%;
+        text-align: center
+    }
+
+    #archivio .salina img {
+        width: 100%
+    }
+
+    #archivio .salina ul li a {
+        font-size: 10px;
+        margin-left: 40%
+    }
+
+    #archivio .salina ul {
+        margin-top: -3%
+    }
+
+    #archivio .salina p {
+        font-size: 8px;
+        margin-bottom: 3%;
+        text-align: center
+    }
+
+    #archivio .seconda-fila {
+        flex-direction: column;
+    }
+
+    #archivio .alicudi img {
+        width: 100%
+    }
+
+    #archivio .alicudi ul li a {
+        font-size: 10px;
+        margin-left: 40%;
+    }
+
+    #archivio .alicudi ul {
+        margin-top: -3%
+    }
+
+    #archivio .alicudi p {
+        font-size: 8px;
+        margin-bottom: 3%;
+        text-align: center
+    }
+
+    #archivio .stromboli img {
+        width: 100%
+    }
+
+    #archivio .stromboli ul li a {
+        font-size: 10px;
+        margin-left: 40%
+    }
+
+    #archivio .stromboli ul {
+        margin-top: -3%
+    }
+
+    #archivio .stromboli p {
+        font-size: 8px;
+        margin-bottom: 3%;
+        text-align: center
+    }
+
+    #archivio .terza-fila {
+        flex-direction: column;
+    }
+
+    #archivio .filicudi img {
+        width: 100%
+    }
+
+    #archivio .filicudi ul li a {
+        font-size: 10px;
+        margin-left: 40%
+    }
+
+    #archivio .filicudi ul {
+        margin-top: -3%
+    }
+
+    #archivio .filicudi p {
+        font-size: 8px;
+        margin-bottom: 3%;
+        text-align: center
+    }
+
+    #archivio .panarea img {
+        width: 100%
+    }
+
+    #archivio .panarea ul li a {
+        font-size: 10px;
+        margin-left: 40%
+    }
+
+    #archivio .panarea ul {
+        margin-top: -3%
+    }
+
+    #archivio .panarea p {
+        font-size: 8px;
+        margin-bottom: 7%;
+        text-align: center
+    }
+
+    #tema h1 {
+        font-size: 14px
+    }
+
+    #tema .introduzione {
+        font-size: 10px
+    }
+
+    #tema h2 {
+        font-size: 11px
+    }
+
+    #tema .testi-indicazioni ul li a {
+        font-size: 10px;
+    }
+
+    #tema .indicazioni img {
+        width: 100%
+    }
+
+    #tema h3 {
+        font-size: 14px;
+        text-align: center
+    }
+
+    #tema .collegamenti p {
+        font-size: 10px;
+        text-align: center
+    }
+
+    #tema .confini p {
+        font-size: 10px;
+        text-align: center
+    }
+
+    #tema .economia p {
+        font-size: 10px;
+        text-align: center
+    }
+
+    #tema .maltempo p {
+        font-size: 10px;
+        text-align: center
+    }
+
+    #tema .maltempo ul li a {
+        font-size: 11px
+    }
+
+    #tema .maltempo ul {
+        margin-left: 23%
+    }
+
+    #lipari h1 {
+        font-size: 15px
+    }
+
+    #lipari .introduzione {
+        font-size: 10px
+    }
+
+    #lipari .indicazioni {
+        flex-direction: column;
+        text-align: center
+    }
+    #lipari h2 {
+        font-size: 10px;
+        text-align: center
+    }
+
+    #lipari .testi-indicazioni ul li a {
+        font-size: 8px
+    }
+
+    #lipari .indicazioni img {
+        width: 100%;
+        height: 50%;
+        margin-top: 5%
+    }
+
+    #lipari h3 {
+        font-size: 14px;
+        text-align: center
+    }
+
+    #lipari .istruzione p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #lipari .app-e-cibo p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #lipari .servizi p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #lipari .fonti p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #lipari .fonti ul li a {
+        font-size: 8px
+    }
+
+    #salina h1 {
+        font-size: 15px
+    }
+
+    #salina .introduzione {
+        font-size: 10px
+    }
+
+    #salina .indicazioni {
+        flex-direction: column;
+        text-align: center
+    }
+    #salina h2 {
+        font-size: 10px;
+        text-align: center
+    }
+
+    #salina .testi-indicazioni ul li a {
+        font-size: 8px
+    }
+
+    #salina .indicazioni img {
+        width: 100%;
+        height: 50%;
+        margin-top: 5%
+    }
+
+    #salina h3 {
+        font-size: 14px;
+        text-align: center
+    }
+
+    #salina .istruzione p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #salina .app-e-cibo p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #salina .servizi p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #salina .fonti p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #salina .fonti ul li a {
+        font-size: 8px
+    }
+
+    #alicudi h1 {
+        font-size: 15px
+    }
+
+    #alicudi .introduzione {
+        font-size: 10px
+    }
+
+    #alicudi .indicazioni {
+        flex-direction: column;
+        text-align: center
+    }
+    #alicudi h2 {
+        font-size: 10px;
+        text-align: center
+    }
+
+    #alicudi .testi-indicazioni ul li a {
+        font-size: 8px
+    }
+
+    #alicudi .indicazioni img {
+        width: 100%;
+        height: 50%;
+        margin-top: 5%
+    }
+
+    #alicudi h3 {
+        font-size: 14px;
+        text-align: center
+    }
+
+    #alicudi .istruzione p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #alicudi .app-e-cibo p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #alicudi .servizi p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #alicudi .fonti p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #alicudi .fonti ul li a {
+        font-size: 8px
+    }
+
+    #stromboli h1 {
+        font-size: 15px
+    }
+
+    #stromboli .introduzione {
+        font-size: 10px
+    }
+
+    #stromboli .indicazioni {
+        flex-direction: column;
+        text-align: center
+    }
+    #stromboli h2 {
+        font-size: 10px;
+        text-align: center
+    }
+
+    #stromboli .testi-indicazioni ul li a {
+        font-size: 8px
+    }
+
+    #stromboli .indicazioni img {
+        width: 100%;
+        height: 50%;
+        margin-top: 5%
+    }
+
+    #stromboli h3 {
+        font-size: 14px;
+        text-align: center
+    }
+
+    #stromboli .istruzione p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #stromboli .app-e-cibo p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #stromboli .servizi p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #stromboli .fonti p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #stromboli .fonti ul li a {
+        font-size: 7px
+    }
+
+    #filicudi h1 {
+        font-size: 15px
+    }
+
+    #filicudi .introduzione {
+        font-size: 10px
+    }
+
+    #filicudi .indicazioni {
+        flex-direction: column;
+        text-align: center
+    }
+    #filicudi h2 {
+        font-size: 10px;
+        text-align: center
+    }
+
+    #filicudi .testi-indicazioni ul li a {
+        font-size: 8px
+    }
+
+    #filicudi .indicazioni img {
+        width: 100%;
+        height: 50%;
+        margin-top: 5%
+    }
+
+    #filicudi h3 {
+        font-size: 14px;
+        text-align: center
+    }
+
+    #filicudi .istruzione p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #filicudi .app-e-cibo p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #filicudi .servizi p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #filicudi .fonti p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #filicudi .fonti ul li a {
+        font-size: 8px
+    }
+
+    #panarea h1 {
+        font-size: 15px
+    }
+
+    #panarea .introduzione {
+        font-size: 10px
+    }
+
+    #panarea .indicazioni {
+        flex-direction: column;
+        text-align: center
+    }
+    #panarea h2 {
+        font-size: 10px;
+        text-align: center
+    }
+
+    #panarea .testi-indicazioni ul li a {
+        font-size: 8px
+    }
+
+    #panarea .indicazioni img {
+        width: 100%;
+        height: 50%;
+        margin-top: 5%
+    }
+
+    #panarea h3 {
+        font-size: 14px;
+        text-align: center
+    }
+
+    #panarea .istruzione p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #panarea .app-e-cibo p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #panarea .servizi p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #panarea .fonti p {
+        font-size: 9px;
+        text-align: center
+    }
+
+    #panarea .fonti ul li a {
+        font-size: 8px
+    }
+
+    footer {
+        max-width: 100%
+    }
+    .titolo-footer {
+        font-size: 8px;
+        margin-left: -13%
+    }
+
+    .approfondimenti {
+        font-size: 6px;
+        margin-left: -13%
+    }
+}
